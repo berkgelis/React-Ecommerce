@@ -1,0 +1,253 @@
+/* HEADER START  */
+.headerContainer {
+    padding: 5px var(--paddingcontainer);
+    border-bottom: 1px solid rgb(233, 223, 223);
+}
+
+.headertop {
+    font-size: 11px;
+}
+
+.headertop a {
+    color: #999 !important;
+}
+
+.Navbar .logo {
+    width: 150px !important;
+}
+
+.Navbar .searchWrapper .searchİcon {
+    cursor: pointer;
+    top: 15px;
+    right: 22px;
+}
+
+/* Search İnput End */
+.Navbar .searchİnput:active {
+    border: none !important;
+    outline: none !important;
+}
+
+.Navbar .searchİnput::after {
+    border: none !important;
+    outline: none !important;
+}
+
+.Navbar .searchİnput:target {
+    border: none !important;
+    outline: none !important;
+}
+
+.Navbar .searchİnput {
+    background-color: #f3f3f3 !important;
+    border: none;
+    padding: 12px 16px;
+}
+
+.Navbar .searchİnput::placeholder {
+    color: #777;
+    font-size: 13px;
+}
+
+/* Search İnput End */
+
+/* Account - Favorite - shopping cart  START*/
+.Navbar .accountNav {
+    font-size: 12px;
+}
+.Navbar .accountNav .badge{
+    width: 1rem;
+    height: 1rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(239, 127, 47) !important;
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+.Navbar .accountNav a {
+    color: var(--linkcolor);
+    font-weight: 500;
+}
+
+.Navbar .accountNav .accountBtn {
+    background-color: transparent;
+    color: var(--linkcolor);
+    font-size: 12px;
+    border: none;
+    padding: 0;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.Navbar .accountNav .accountBtn:active {
+    background-color: white;
+    color: var(--linkcolor);
+}
+
+#overlay-example {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 100%;
+}
+
+.tooltipContainer {
+    margin-top: -5px !important;
+}
+
+.login {
+    background-color: rgb(227, 128, 55);
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.register {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(233, 223, 223);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.login,
+.register {
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: block !important;
+    width: 140px;
+}
+
+.tooltip-inner {
+    background-color: white !important;
+}
+
+/* Account - Favorite - Cart  END */
+
+/* NAVTAB  Start */
+
+.NavTabs {
+    gap: 10px !important;
+    width: 100%;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    position: relative;
+}
+
+.NavTabs a {
+    position: relative;
+    color: rgb(50, 50, 50);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 12px 0;
+}
+
+.NavTabs a:hover {
+    color: rgb(227, 128, 55);
+}
+
+.NavTabs .nav-item a:hover::after {
+    content: "";
+    height: 2px;
+    background-color: rgb(227, 128, 55);
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+}
+
+.NavTabs a span {
+    background-color: rgb(207, 57, 46);
+    color: white;
+    border-radius: 10px;
+    padding: 1px 4px;
+    font-size: 0.7rem;
+}
+
+.TabsHover {
+    position: absolute;
+    width: 102%;
+    height: 540px;
+    top: 30px;
+    left: 0px;
+    z-index: 10;
+    background-color: #fafafa;
+    display: none !important;
+}
+
+.TabsHover li {
+    list-style-type: none;
+}
+
+.NavTabs .kadın:hover+.TabsHover,
+.TabsHover:hover,
+.NavTabs .erkek:hover+.TabsHover,
+.TabsHover:hover,
+.NavTabs .anne:hover+.TabsHover,
+.TabsHover:hover,
+.NavTabs .ev:hover+.TabsHover,
+.TabsHover:hover,
+.NavTabs .market:hover+.TabsHover,
+.TabsHover:hover,
+.NavTabs .kozmetik:hover+.TabsHover,
+.TabsHover:hover,
+.NavTabs .ayakkabi:hover+.TabsHover,
+.TabsHover:hover,
+.NavTabs .elektronik:hover+.TabsHover,
+.TabsHover:hover,
+.NavTabs .spor:hover+.TabsHover,
+.TabsHover:hover {
+    display: flex !important;
+}
+
+/* HEADER END */
+
+@media (max-width:1024px) {
+
+    .NavTabs .kadın:hover+.TabsHover,
+    .TabsHover:hover,
+    .NavTabs .erkek:hover+.TabsHover,
+    .TabsHover:hover,
+    .NavTabs .anne:hover+.TabsHover,
+    .TabsHover:hover,
+    .NavTabs .ev:hover+.TabsHover,
+    .TabsHover:hover,
+    .NavTabs .market:hover+.TabsHover,
+    .TabsHover:hover,
+    .NavTabs .kozmetik:hover+.TabsHover,
+    .TabsHover:hover,
+    .NavTabs .ayakkabi:hover+.TabsHover,
+    .TabsHover:hover,
+    .NavTabs .elektronik:hover+.TabsHover,
+    .TabsHover:hover,
+    .NavTabs .spor:hover+.TabsHover,
+    .TabsHover:hover {
+        display: none !important;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .accountNav {
+        min-width: 100px;
+    }
+
+}
+
+@media (max-width:520px) {
+    .headertop a {
+        font-size: 8px;
+    }
+
+    .Navbar .logo {
+        width: 120px !important;
+    }
+}

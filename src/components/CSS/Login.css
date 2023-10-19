@@ -1,0 +1,51 @@
+
+/* LOGİN START */
+.accountContainer {
+    width: 100vw; 
+    height: 80vh;
+    background-color: #fafafa;
+    padding-top: 30px;
+}
+
+.Login {
+    border-top: 0px !important;
+    width: 420px ;
+}
+
+.Login .card-header {
+    padding-bottom: 0px !important;
+}
+
+.Login .card-header-tabs {
+    margin: auto;
+    width: 100%;
+
+}
+
+.Login .nav-item {
+    width: 50%;
+
+}
+
+.logincolor {
+    color: rgb(227, 128, 55) !important;
+}
+
+.loginbutton {
+    background-color: #f27a1a;
+}
+
+.registertext {
+    font-size: 11px !important;
+}
+
+/* LOGİN END */
+
+
+@media (max-width:520px) {
+
+    .card {
+        margin-bottom: 20px;
+        width: 100% ;
+    }
+}

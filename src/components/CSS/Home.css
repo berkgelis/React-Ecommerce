@@ -1,0 +1,166 @@
+/* HOME START */
+.homeContainer {
+    padding: 5px var(--paddingcontainer);
+}
+
+.banner img {
+    cursor: pointer;
+}
+
+/* Carousel Start */
+.Carousel {
+    position: relative;
+}
+
+.Carousel .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Carousel .carousel-indicators {
+    display: none !important;
+}
+
+.Carousel .carouselImg {
+    width: 70px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 50%;
+}
+
+.Carousel .carousel-item {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    min-width: max-content;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+
+}
+
+.Carousel .carousel-item.active {
+    display: flex;
+}
+
+.Carousel .carousel-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--linkcolor);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.Carousel .carousel-control-next,
+.Carousel .carousel-control-prev {
+    width: 1px;
+}
+
+.Carousel .carousel-control-next-icon {
+    position: absolute;
+    right: -20px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGCi1kDX_NHzSlLXxjhohOYtfHU14_DSSPQ&usqp=CAU);
+    background-size: 35%;
+}
+
+.Carousel .carousel-control-prev-icon {
+    position: absolute;
+    left: -20px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGCi1kDX_NHzSlLXxjhohOYtfHU14_DSSPQ&usqp=CAU);
+    transform: rotateY(180deg);
+    background-size: 35%;
+}
+
+/* Carousel End */
+
+/*  Banner Start */
+.banner>div img {
+    margin-bottom: 10px;
+    max-height: 60px;
+}
+
+/*  Banner End */
+
+/* Cards Start */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-container .card {
+    width: 32% ; 
+    border-radius: 6px !important;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-container .card span {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all .2s;
+    display: flex;
+}
+
+.card-container .card:hover span {
+    background-color: rgb(227, 128, 55);
+    justify-content: space-between;
+}
+
+.card-container .card:hover span::after {
+    content: 'Alışverişe Başla >';
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    transition: all 1.5s ease-out;
+
+}
+
+.card:hover img {
+    scale: 1.03;
+}
+
+/* Cards End */
+
+/* HOME End */
+@media (max-width:1200px) {
+    .card-container .card {
+        width: 49%;
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width:768px) {
+    .carousel-inner {
+        width: 94% !important;
+        margin: auto;
+    }
+    .card-container .card {
+        width: 100%;
+    }
+    .card img{
+        height: 340px;
+    }
+
+    .banner>div {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media (max-width:520px) {
+
+    .banner>div {
+        width: 100%;
+    }
+
+}
